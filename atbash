@@ -1,0 +1,22 @@
+#Tome un problema bastante simple la verdad, ,
+peeero tambien funcional por si acaso y para comprender lo mas estructural de esto#
+
+def atbash(texto):
+alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+texto = texto.upper()
+resultado = ''
+
+for letra in texto:
+    if letra in alfabeto:
+        indice = alfabeto.index(letra)
+        letra_invertida = alfabeto[25 - indice]
+        resultado += letra_invertida
+    else:
+        resultado += letra  Deja espacios o símbolos tal como están
+
+return resultado
+#Pues basicamente ete codigo nos ayuda a descifrar el cifrado atbash
+
+#Ejemplito:
+#Mensaje original: HOLA MUNDO
+#Mensaje cifrado: SLOW NFMWL
